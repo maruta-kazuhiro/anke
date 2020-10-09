@@ -1,2 +1,0 @@
-class Ankeeto < ApplicationRecord
-end
