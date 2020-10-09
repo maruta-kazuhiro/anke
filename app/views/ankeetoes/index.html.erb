@@ -1,13 +1,13 @@
 <div class="cover">
 <div class="mat">
   <header class="header">
-    <div class="grid"><a href="#">Kantan Ankeeto</a></div>
-    <div class="user_nav grid-6">
+    <div class="grid"><a href="/">Kantan Ankeeto</a></div>
+    <div class="user_nav">
       <% if user_signed_in? %>
-        <ul class='lists-right'>
-          <li><%= link_to 'アカウント', edit_user_registration_path, class: "user-nickname" %></li> 
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
-        </ul>
+        <div class='lists-right'>
+          <div class='lists'><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></div> 
+          <div class='lists'><%= link_to current_user.nickname, edit_user_registration_path, class: "user-nickname" %></div> 
+        </div>
       <% else %>
         <div class='lists-right'>
           <div class= 'login'><%= link_to 'ログイン', new_user_session_path, class: "login" %></div>

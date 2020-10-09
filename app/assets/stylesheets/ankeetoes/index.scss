@@ -24,11 +24,19 @@ a {
   background-color: #ffffff;
 }
 
+.user_nav {
+  margin: 20px;
+}
+
 .lists-right {
   list-style: none;
   display: flex;
   flex-direction: row-reverse;
   margin: 30px;
+}
+
+.lists{
+  margin: 0 20px 0 20px;
 }
 
 .login {
