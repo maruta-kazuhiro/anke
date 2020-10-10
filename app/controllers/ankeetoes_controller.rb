@@ -9,12 +9,12 @@ class AnkeetoesController < ApplicationController
   end
 
   def create
-    Ankeeto.create(ankeeto_params)
+    @ankeeto = Ankeeto.create(ankeeto_params)
   end
 
   private
   def ankeeto_params
-    params.require(:ankeeto).permit(:image, :name, :question, :answer1, :answer2, :answer3).merge(user_id: current_user.id)
+    params.require(:ankeeto).permit(:image, :question, :answer1, :answer2, :answer3).merge(user_id: current_user.id)
   end
 
 end

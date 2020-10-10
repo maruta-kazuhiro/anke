@@ -3,7 +3,7 @@
   <div class="title">アンケートを作ってみましょう！</div>
 
   <div class="mainbox">
-  <%= form_with model: @ankeetoes, local: true do |form| %>
+    <%= form_with model: @ankeetoes, local: true do |form| %>
         <div class="click-upload">
         <p>クリックで画像を付けられます</p>
         </div>
@@ -22,7 +22,7 @@
         <%= form.text_field :answer3, class:"input-default", id:"anke-a3", placeholder: "例）緑" %><br />
 
         <%= form.submit "質問する！" %>
-  <% end %>
+    <% end %>
   </div>
 
   </div>

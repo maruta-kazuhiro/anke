@@ -13,6 +13,11 @@
 ActiveRecord::Schema.define(version: 2020_10_09_075921) do
 
   create_table "ankeetos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "image"
+    t.text "question", null: false
+    t.string "answer1", null: false
+    t.string "answer2", null: false
+    t.string "answer3", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

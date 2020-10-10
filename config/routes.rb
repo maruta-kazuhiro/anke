@@ -3,5 +3,4 @@ Rails.application.routes.draw do
 
   root to: 'ankeetoes#index'
   resources :ankeetoes
-
 end
