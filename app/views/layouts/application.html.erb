@@ -10,6 +10,29 @@
   </head>
 
   <body>
+  <div class="cover">
+<div class="mat">
+  <header class="header">
+    <div class="grid"><a href="/">Kantan Ankeeto</a></div>
+    <div class="user_nav">
+      <% if user_signed_in? %>
+        <div class='lists-right'>
+          <div class='lists'><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></div> 
+          <div class='lists'><%= link_to current_user.nickname, edit_user_registration_path, class: "user-nickname" %></div> 
+        </div>
+      <% else %>
+        <div class='lists-right'>
+          <div class= 'login'><%= link_to 'ログイン', new_user_session_path, class: "login" %></div>
+          <div class= 'login'><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></div>
+        </div>
+      <% end %>
+    </div>
+  </header>
     <%= yield %>
+      <footer>
+    <p>Copyright KnatanAnkeeto 2020.</p>
+  </footer>
+</div>
+</div>
   </body>
 </html>

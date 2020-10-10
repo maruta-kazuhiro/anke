@@ -1,9 +1,3 @@
-<div class="cover">
-<div class="mat">
-  <header class="header">
-    <div class="grid"><a href="/">Kantan Ankeeto</a></div>
-    <div class="user_nav grid-6">
-
 <div class="box">
 <%= form_with model: @user, url:user_registration_path, class: 'registration-main', local: true do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -34,10 +28,4 @@
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-</div>
-
-  <footer>
-    <p>Copyright KnatanAnkeeto 2020.</p>
-  </footer>
-</div>
 </div>

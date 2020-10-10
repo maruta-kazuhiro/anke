@@ -4,4 +4,8 @@ class AnkeetoesController < ApplicationController
     @ankeetoes = Ankeeto.all
   end
 
+  def new
+    @ankeeto = Ankeeto.new
+  end
+
 end
