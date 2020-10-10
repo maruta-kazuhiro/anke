@@ -11,18 +11,32 @@ a {
 
 .mat{
   background-color: #faf0e6;
-  opacity:  0.8;
-  height: 80vh;
+  opacity:  0.85;
+  height: 100vh;
 }
 
-.grid {
+.maintitle {
   font-size: xx-large;
   padding: 10px;
   height: 40px;
   width: 100vw;
   color: blanchedalmond;
-  background-color: #ffffff;
+  display:block;
 }
+
+h1{
+  font-family: 'Vidaloka', serif;
+  text-align: left;
+  font-weight: normal;
+  color: #444;
+  }
+
+.description{
+  display: block;
+  font-size: xx-small;
+  color: #444;
+  display:block;
+  }
 
 .user_nav {
   margin: 20px;
@@ -69,7 +83,7 @@ a {
 .message {
   width: 50%;
   line-height: 2;
-  background-color:#008b8b;
+  background-color:#191970;
   padding: 20px;
   position: center;
   z-index: 999;
